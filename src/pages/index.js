@@ -1,14 +1,22 @@
-import React from "react"
-import styled from 'styled-components';
-
-const StyledDiv = styled.div`
-  background-color: red;
-`;
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import { GlobalStyle } from '../components';
+import { HeaderContainer } from '../components/header';
 
 export default () => {
   return (
-    <StyledDiv>
-      <p>Hey</p>
-    </StyledDiv>
+    <>
+      <Helmet>
+        <title>Bill Early | Software Developer</title>
+        <html lang="en" />
+      </Helmet>
+
+      <GlobalStyle />
+
+      <HeaderContainer>
+        <p>Bill Early,</p>
+        <p>Software Developer</p>
+      </HeaderContainer>
+    </>
   );
 }
