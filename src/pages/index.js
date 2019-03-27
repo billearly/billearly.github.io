@@ -9,6 +9,7 @@ export default () => {
       <Helmet>
         <title>Bill Early | Software Developer</title>
         <html lang="en" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"></link>
       </Helmet>
 
       <GlobalStyle />
