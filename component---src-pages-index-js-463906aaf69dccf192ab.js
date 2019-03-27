@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{140:function(e,n,a){"use strict";a.r(n);var t=a(0),o=a.n(t),l=a(142).a.div.withConfig({displayName:"pages__StyledDiv",componentId:"knlsme-0"})(["background-color:red;"]);n.default=function(){return o.a.createElement(l,null,o.a.createElement("p",null,"Hey"))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-463906aaf69dccf192ab.js.map
