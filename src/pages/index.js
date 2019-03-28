@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { GlobalStyle } from '../components';
-import { HeaderContainer } from '../components/header';
+import { Temp } from '../components/temp';
 
 export default () => {
   return (
@@ -14,10 +14,7 @@ export default () => {
 
       <GlobalStyle />
 
-      <HeaderContainer>
-        <p>Bill Early,</p>
-        <p>Software Developer</p>
-      </HeaderContainer>
+      <Temp />
     </>
   );
 }
