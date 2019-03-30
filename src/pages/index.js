@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { Helmet } from 'react-helmet';
-import { GlobalStyle } from '../components';
+import { GlobalStyle } from '../components/global';
 import { Temp } from '../components/temp';
 import { main } from '../theme';
 
