@@ -10,12 +10,12 @@ const Container = styled.div`
 `;
 
 const Text = styled.p`
-  color: #ffffff;
-  margin: 0.25rem 0;
+  color: ${props => props.theme.colorWhite};
+  margin: ${props => props.theme.textSpacing} 0;
 `;
 
 const OrangeText = styled(Text)`
-  color: #ffa500;
+  color: ${props => props.theme.colorOrange};
 `;
 
 export const Temp = () => {
