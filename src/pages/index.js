@@ -2,7 +2,12 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { Helmet } from 'react-helmet';
 import { GlobalStyle } from '../components/global';
-import { Temp } from '../components/temp';
+import {
+  HeaderContainer,
+  HeaderTitle,
+  HeaderSubTitle
+} from '../components/header';
+import { ColoredSpan } from '../components/text';
 import { main } from '../theme';
 
 export default () => {
@@ -18,7 +23,19 @@ export default () => {
         <>
           <GlobalStyle />
 
-          <Temp />
+          <HeaderContainer>
+            <HeaderTitle>
+              Hey, I'm <ColoredSpan color={main.colorBlueLight}>Bill</ColoredSpan>
+            </HeaderTitle>
+            
+            <HeaderSubTitle>
+              I develop software.
+            </HeaderSubTitle>
+            
+            <HeaderSubTitle>
+              You can tell because my website has a picture of a desk with a laptop on it just like every other dev's site.
+            </HeaderSubTitle>
+          </HeaderContainer>
         </>
       </ThemeProvider>
     </>
