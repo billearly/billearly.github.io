@@ -5,6 +5,7 @@ import React from 'react';
 import { graphql, StaticQuery } from 'gatsby'
 import styled from 'styled-components';
 import BackgroundImage from 'gatsby-background-image';
+import { ContentWrapper } from '../layout';
 
 const BackgroundSection = ({ className, children }) => (
   <StaticQuery query={graphql`
@@ -36,18 +37,18 @@ const BackgroundSection = ({ className, children }) => (
 );
 
 const StyledBackground = styled(BackgroundSection)`
-  align-items: center;
-  color: white;
-  display: flex;
-  flex-direction: column;
+  color: ${props => props.theme.colorWhite};
   height: 80vh;
-  justify-content: center;
   overflow: hidden;
   position: relative;
+
+  ${ContentWrapper} {
+    padding-top: 12.5rem;
+  }
 `;
 
 const AngledDiv = styled.div`
-  background-color: white;
+  background-color: ${props => props.theme.colorGrayLight};
   bottom: -5rem;
   height: 10rem;
   left: -50%;
@@ -56,12 +57,14 @@ const AngledDiv = styled.div`
   width: 200%;
 `;
 
-export const HeaderContainer = ({ children }) => {
+export const Header = ({ children }) => {
   return (
     <StyledBackground>
-      <div>
-        {children}
-      </div>
+      <ContentWrapper>
+        <div>
+          {children}
+        </div>
+      </ContentWrapper>
 
       <AngledDiv />
     </StyledBackground>

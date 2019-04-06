@@ -3,5 +3,7 @@ export const main = {
   colorOrange: "#ffa500",
   colorWhite: "#ffffff",
   colorGrayDark: "#323232",
-  textSpacing: "0.25rem"
+  colorGrayLight: "#efefef",
+  textSpacing: "0.25rem",
+  widthMax: "65rem"
 }
