@@ -5,16 +5,19 @@ import { GlobalStyle } from '../components/global';
 import {
   Header,
   HeaderTitle,
-  HeaderSubTitle
+  HeaderSubTitle,
+  HeaderIconSection
 } from '../components/header';
 import {
   CardSection,
   Card,
   SectionHeader
 } from '../components/section';
+import { IconLink } from '../components/icon';
 import { ContentWrapper } from '../components/layout';
 import { ColoredSpan } from '../components/text';
 import { main } from '../theme';
+import { GitHub, Linkedin } from 'react-feather';
 
 export default () => {
   return (
@@ -41,6 +44,26 @@ export default () => {
             <HeaderSubTitle>
               You can tell because my website has a picture of a desk with a laptop on it just like every other dev's site.
             </HeaderSubTitle>
+
+            <HeaderIconSection>
+              <IconLink
+                link='https://github.com/billearly'
+                colorIcon='white'
+                colorBackground='#ffffff4d'
+                colorHover='white'
+              >
+                <GitHub />
+              </IconLink>
+
+              <IconLink
+                link='https://www.linkedin.com/in/billearly/'
+                colorIcon='white'
+                colorBackground='#ffffff4d'
+                colorHover='white'
+              >
+                <Linkedin />
+              </IconLink>
+            </HeaderIconSection>
           </Header>
 
 
