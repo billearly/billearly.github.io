@@ -9,10 +9,14 @@ const CardContainer = styled.div`
   padding: 1rem;
 `;
 
+const CardTitle = styled.p`
+  padding-bottom: 1rem;
+`;
+
 export const Card = ({ title, body }) => {
   return (
     <CardContainer>
-      <p>{title}</p>
+      <CardTitle>{title}</CardTitle>
       <p>{body}</p>
     </CardContainer>
   );
