@@ -6,7 +6,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: ${props => props.theme.colorGrayLight};
+    background-color: ${props => props.theme.colorWhite};
+    color: ${props => props.theme.colorGrayDark};
     font-family: 'Roboto', sans-serif;
     margin: 0;
   }

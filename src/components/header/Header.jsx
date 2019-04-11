@@ -48,7 +48,7 @@ const StyledBackground = styled(BackgroundSection)`
 `;
 
 const AngledDiv = styled.div`
-  background-color: ${props => props.theme.colorGrayLight};
+  background-color: ${props => props.theme.colorWhite};
   bottom: -5rem;
   height: 10rem;
   left: -50%;
