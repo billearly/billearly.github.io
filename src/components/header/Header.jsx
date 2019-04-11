@@ -38,12 +38,12 @@ const BackgroundSection = ({ className, children }) => (
 
 const StyledBackground = styled(BackgroundSection)`
   color: ${props => props.theme.colorWhite};
-  height: 80vh;
   overflow: hidden;
+  padding: 12rem 0;
   position: relative;
 
-  ${ContentWrapper} {
-    padding-top: 12.5rem;
+  @media only screen and (max-width: 30rem) {
+    padding: 4rem 0 8rem;
   }
 `;
 
