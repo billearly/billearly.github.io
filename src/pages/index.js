@@ -74,60 +74,61 @@ export default () => {
 
             <WorkEntry
               jobTitle='Software Developer'
-              company='EF Education First'
+              company='Labs at EF Education First'
               timeline='January 2018 - Present'
-              description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+              description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
               color='#ea6161'
             />
 
             <WorkEntry
               jobTitle='QA Specialist'
-              company='EF Education First'
+              company='Labs at EF Education First'
               timeline='Oct 2014 - Jan 2018'
-              description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+              description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+              bulletPoints={[
+                'Created automated UI test infrastructure using Webdriverio and Selenium',
+                'Integrated tests with build tools (Teamcity) to run tests remotely on Browserstack'
+              ]}
               color='#ea6161'
             />
 
             <WorkEntry
               jobTitle='Junior QA Specialist'
-              company='EF Education First'
+              company='Labs at EF Education First'
               timeline='March 2013 - Oct 2014'
-              description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+              description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+              bulletPoints={[
+                'Testing of responsive websites across mobile/tablet/desktop',
+                'Manual testing of new features as well as full site regressions',
+                'Coordinating with developers and designers in an agile environment'
+              ]}
               color='#ea6161'
             />
 
             <WorkEntry
               jobTitle='In Game Support'
-              company='Turbine | Warner Brothers Games'
+              company='Turbine | WB Games Boston'
               timeline='November 2012 - March 2013'
-              description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+              description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+              bulletPoints={[
+                'Worked directly with users to resolve game quality issues',
+                'Coordinated with the development team to track recurring issues'
+              ]}
               color='#ea6161'
             />
 
             <WorkEntry
               jobTitle='QA Tester'
-              company='Turbine | Warner Brothers Games'
+              company='Turbine | WB Games Boston'
               timeline='February 2012 - October 2012'
-              description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+              description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+              bulletPoints={[
+                'Writing Content Testplans for upcoming updates',
+                'Testing new content and systems to determine if quality standards are met',
+                'Investigating player reported issues'
+              ]}
               color='#ea6161'
             />
-          </ContentWrapper>
-
-          <ContentWrapper>
-            <SectionHeader>
-              Professional Work
-            </SectionHeader>
-
-            <CardSection>
-              <Card>
-              </Card>
-
-              <Card>
-              </Card>
-
-              <Card>
-              </Card>
-            </CardSection>
           </ContentWrapper>
 
           <ContentWrapper>

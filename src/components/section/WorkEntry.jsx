@@ -2,10 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 export const WorkEntryContainer = styled.div`
+  background-color: #ececec;
+  border-radius: 0.3rem;
   display: grid;
   grid-column-gap: 3rem;
   grid-template-columns: 1fr 2fr;
-  margin: 5rem 0;
+  margin: 4rem -2rem;
+  padding: 2rem;
 `;
 
 const JobTitle = styled.h3`
@@ -30,11 +33,34 @@ const Description = styled.p`
 
 `;
 
+const BulletList = styled.ul`
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 0.25rem;
+  box-shadow: #cecece 0px 0.02rem 0.5rem;
+  margin-bottom: 0;
+  padding: 1rem;
+  padding-left: 2rem;
+
+`;
+
+const BulletItem = styled.li`
+  margin: 0.5rem;
+`;
+
+const renderBulletPoints = bulletPoints =>
+  bulletPoints.map((point, i) =>
+    <BulletItem key={i}>
+      {point}
+    </BulletItem>
+  );
+
 export const WorkEntry = ({
   jobTitle,
   company,
   timeline,
   description,
+  bulletPoints,
   color
 }) => {
   return (
@@ -47,7 +73,15 @@ export const WorkEntry = ({
         <Timeline>{timeline}</Timeline>
       </div>
 
-      <Description>{description}</Description>
+      <div>
+        <Description>{description}</Description>
+
+        {bulletPoints &&
+          <BulletList>
+            {renderBulletPoints(bulletPoints)}
+          </BulletList>
+        }
+      </div>
     </WorkEntryContainer>
   );
 }
